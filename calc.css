@@ -1,0 +1,11 @@
+:root {
+    ---bg: #0a0d12;
+    --panel: rgba(30, 35, 45, 0.85);
+    --btn: #2a2f38;
+    --btn-dark: #1e232b;
+    --btn-op: #ff9f0a;
+    --btn-eq: #30d158;
+    --text: #e5e7eb;
+    --display: #9efcff;
+    --neon: #00eaff;
+}
