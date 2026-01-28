@@ -1,3 +1,5 @@
+/*==========Root theme===============*/
+
 :root {
     ---bg: #0a0d12;
     --panel: rgba(30, 35, 45, 0.85);
@@ -8,4 +10,149 @@
     --text: #e5e7eb;
     --display: #9efcff;
     --neon: #00eaff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+        "Segoe UI", system-ui, sans-serif;
+}
+
+/*========== BODY ===============*/
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*========== Background ===============*/
+
+#bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.formula {
+    position: absolute;
+    color: rgba(0, 234, 255, 0.08);
+    white-space: nowrap;
+    font-size: 18px;
+    animation: flow linear infinite;
+}
+
+@keyframes flow {
+    from {
+        transform: translateY(110vh);
+    }
+
+    to {
+        transform: translateY(-20vh);
+    }
+}
+
+
+/* ================= CALCULATOR ================= */
+
+.calculator {
+    position: relative;
+    z-index: 2;
+    width: 460px;
+    padding: 18px;
+    border-radius: 22px;
+    background: linear-gradient(180deg,
+            rgba(40, 45, 55, 0.85),
+            rgba(15, 18, 25, 0.9));
+    backdrop-filter: blur(16px);
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.9),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ================= DISPLAY ================= */
+
+.display {
+    height: 90px;
+    background: linear-gradient(180deg, #020617, #000);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: right;
+    font-size: 36px;
+    color: var(--display);
+    overflow-x: auto;
+    box-shadow:
+        inset 0 0 25px rgba(0, 234, 255, 0.15);
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+button {
+    height: 54px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(180deg, #2e3440, #1f2430);
+    color: var(--text);
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        0 0 12px rgba(0, 234, 255, 0.25),
+        0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.op {
+    background: linear-gradient(180deg, #ffb347, #ff9500);
+    color: black;
+}
+
+.clear {
+    background: linear-gradient(180deg, #fb7185, #ef4444);
+}
+
+.eq {
+    grid-column: span 3;
+    background: linear-gradient(180deg, #34d399, #22c55e);
+    color: black;
+    font-size: 20px;
+}
+
+/* ================= NEON GLOW ================= */
+.neon {
+    text-shadow:
+        0 0 6px rgba(0, 234, 255, 0.6),
+        0 0 14px rgba(0, 234, 255, 0.4);
+}
+
+.name{
+    grid-column: span 3;
+    background: linear-gradient(180deg, #4b4c4d, #1b1f20);
+    color: rgb(226, 224, 224);
+    font-size: 20px;
+    cursor: default;
+}
+
+.name:hover {
+    transform: translateY(0px);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 6px 14px rgba(0, 0, 0, 0.5);
 }
