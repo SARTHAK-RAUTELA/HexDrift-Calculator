@@ -1,5 +1,7 @@
 # 🧮 HEXDRIFT – Neon Scientific Calculator (Web)
 
+Live Demo: https://sarthak-rautela.github.io/HexDrift-Calculator/
+
 A macOS-inspired neon scientific calculator built using HTML, CSS, and Vanilla JavaScript, featuring keyboard support, animated background formulas, and a modern glassmorphism UI.
 
 Designed to feel smooth, minimal, and visually futuristic ✨
