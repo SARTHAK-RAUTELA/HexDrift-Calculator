@@ -116,7 +116,7 @@ var formulas = [
 
 var bg = document.getElementById("bg");
 for (let i = 0; i < 45; i++) {
-    let f + document.createElement("div");
+    let f = document.createElement("div");
     f.className = "formula";
     f.innerText = formulas[Math.floor(Math.random() * formulas.length)];
     f.style.left = Math.random() * 100 + "vw";
