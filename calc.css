@@ -1,7 +1,7 @@
 /*==========Root theme===============*/
 
 :root {
-    ---bg: #0a0d12;
+    --bg: #0a0d12;
     --panel: rgba(30, 35, 45, 0.85);
     --btn: #2a2f38;
     --btn-dark: #1e232b;
@@ -31,6 +31,8 @@ body {
 }
 
 
+
+
 /*========== Background ===============*/
 
 #bg {
@@ -40,9 +42,10 @@ body {
     z-index: 0;
 }
 
+
 .formula {
     position: absolute;
-    color: rgba(0, 234, 255, 0.08);
+    color: rgba(0, 234, 255, 0.12);
     white-space: nowrap;
     font-size: 18px;
     animation: flow linear infinite;
@@ -83,6 +86,7 @@ body {
     background: linear-gradient(180deg, #020617, #000);
     border-radius: 14px;
     padding: 16px;
+    margin-bottom: 14px;
     text-align: right;
     font-size: 36px;
     color: var(--display);
@@ -142,7 +146,7 @@ button:hover {
         0 0 14px rgba(0, 234, 255, 0.4);
 }
 
-.name{
+.name {
     grid-column: span 3;
     background: linear-gradient(180deg, #4b4c4d, #1b1f20);
     color: rgb(226, 224, 224);

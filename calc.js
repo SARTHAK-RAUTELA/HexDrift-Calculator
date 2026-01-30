@@ -43,7 +43,10 @@ document.addEventListener("keydown", e => {
     if (["+", "-", "*", "/", ".", "(", ")"].includes(k)) press(k);
     if (k === "Enter") calculate();
     if (k === "Backspace") {
-        display.innerText = display.innerText.length > 1 ? display.innerText.slice(0, -1) : "0";
+        display.innerText =
+            display.innerText.length > 1
+                ? display.innerText.slice(0, -1)
+                : "0";
     }
     if (k === "Escape") clearDisplay();
 });
@@ -114,7 +117,7 @@ var formulas = [
 
 ];
 
-var bg = document.getElementById("bg");
+const bg = document.getElementById("bg");
 for (let i = 0; i < 45; i++) {
     let f = document.createElement("div");
     f.className = "formula";
