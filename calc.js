@@ -118,6 +118,8 @@ var formulas = [
 ];
 
 const bg = document.getElementById("bg");
+
+
 for (let i = 0; i < 45; i++) {
     let f = document.createElement("div");
     f.className = "formula";
@@ -126,4 +128,5 @@ for (let i = 0; i < 45; i++) {
     f.style.animationDuration = 10 + Math.random() * 18 + "s";
     f.style.fontSize = 14 + Math.random() * 22 + "px";
     bg.appendChild(f);
+
 }
